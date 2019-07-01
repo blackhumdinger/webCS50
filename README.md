@@ -1,37 +1,105 @@
-## Welcome to GitHub Pages
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>MY WEB PAGE</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
 
-You can use the [editor on GitHub](https://github.com/blackhumdinger/webCS50/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+        }
+        .topnav {
+            overflow:hidden;
+            background-color: aqua;
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+        }
+        .topnav a{
+            float: left;
+            display: block;
+            color: bisque;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        @media screen and (max-width: 600px){
+            .topnav a{
+                float: none;
+                width:100%
+            }
+        }
+        @media print{
+            #one{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 500px){
+            body{
+                font-size: 25px ; 
+                background-color: lightgreen;
+                color: blue;
+            }
+        
+        }
+        @media screen and (min-width: 1440px){
+            body{
+                font-size: 55px;
+                background-color: black;
+                color: antiquewhite;
+            }
+        
+        }
+        @media screen and (max-width:600px){
+            .topnav a{
+                float: none;
+                width: 100%
+            }
+        }
+        .topnav :hover{
+            background-color: black;
+            color:blanchedalmond;
+        }
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+        </style>
+    </head>
+<body>
+    <div id="one">
+        he @media rule is used in media queries to apply different styles for different media types/devices
+        media queries are a apopular technique for delivering tailored style sheets to desktops, laptop s
+        and mobile devices 
+    WE CAN ALSO SPECIFY THAT A CERTAIN MEDIA TYPE IS AVAILABLE ONLY FOR A PARTICULAR DEVICE FOR 
+    INSTANCE WE CAN SPECIFY THE STYLES ON
+    </div>    
+    <div class="topnav">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+          </div>
+          
+</body>
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+</html>
 
-- Bulleted
-- List
+<!--the @media rule is used in media queries to apply different styles for different media types/devices
+    media queries are a apopular technique for delivering tailored style sheets to desktops, laptop s
+    and mobile devices 
+WE CAN ALSO SPECIFY THAT A CERTAIN MEDIA TYPE IS AVAILABLE ONLY FOR A PARTICULAR DEVICE FOR 
+INSTANCE WE CAN SPECIFY THE STYLES ONLY FOR CERTAIN SCREEN READERS OR PRINTED DOCUMENTS
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+!!!IDEA-- ADD A FOOTER WHICH IS ONLY VISIBLW WHEN WE PRINT SO THAT WE CAN INCLUDE COPYRIGHTS TO THE 
+WE CONTENT EVEN IF ITS PRINTED
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/blackhumdinger/webCS50/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+the dot before the classname of the css selector indicates that we have selected all the 
+classes that have the name or belong to the class as mentioned here it is the class screen_only
+here we have not allowed the contents of the website to be printed so that we have set the 
+display attribute to none in the print media
+whilst in the screen only mode we have added a few modfications via the media tag where we can
+actually change the response of the webpage according to the size of the screen and various other stuff
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+-->
