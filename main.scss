@@ -1,0 +1,110 @@
+$color : pink;
+
+
+h1{
+                color: black;
+                font-weight: bolder;
+                font-style: italic;
+                position: sticky;
+                top: 0;
+                margin-block: 20px 20px;
+               
+                align-self: left;
+                font-size: 90px;
+                
+                background-size:100% auto;
+                background-color: greenyellow;
+            }
+ 
+                    @media screen and (max-width:700px){
+                        h1{
+                            content: beatles!;
+                            text-align: left;
+                            font-size: 50px;
+                            color: black;
+                            background-image: linear-gradient(to bottom right, black, white);
+                        }
+                        h1::before{
+                            content: "the best!";
+                           
+
+                        }
+                      
+                    }
+                    h1::before{
+                    content: "THE REST IS HISTORY! ";
+                    font-weight: bold;
+                    font-style: italic;
+                    color: yellowgreen;
+                    background-color: black;
+                    font-size:10px ;
+                    display: flex;
+                    flex-wrap: initial;
+                    align-content: flex-start;
+                    position: fixed;
+                
+            }
+            footer{
+                position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:yellowgreen;
+  color: BLACK;
+  text-align: center;
+            }
+            @media(max-width:700px){
+                .container{
+                    max-width: 300px;
+                }
+                #vide{
+                    max-width: 300px;
+
+
+                }
+            }
+            #one, #three{
+                $color: black;
+            }
+            #two{
+                color: white;
+            }
+            .col{
+                overflow: hidden;
+                
+                position: sticky;
+                top: 0;
+
+            }
+            #merch{
+                color: white;
+            }
+            .col  :hover{
+                background-color: gray;
+                color: black;
+            }
+            a{
+                color: green;
+            }
+            #news{
+                font-size: 20px;
+
+            }
+            #uno{
+                text-align: center;
+                $color: violet;
+                letter-spacing: 2px;
+            }
+   
+            #dos{
+                text-align: center;
+                $color: indigo;
+                text-decoration: brown;
+                text-decoration-line: underline;
+                letter-spacing: 1px;
+            }
+            #tres{
+                $color: red;
+                text-align: center;
+                letter-spacing: 2px;
+            }
